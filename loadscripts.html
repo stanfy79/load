@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Load Script and Display Content</title>
+    <title>Load Script and Edit Content</title>
 
     <style>
         * {
@@ -149,7 +149,7 @@
 
         document.getElementById('send-script-button').addEventListener('click', () => {
             const modifiedScriptContent = document.getElementById('script-content').textContent;
-            const postUrl = document.getElementById('send-url'); // Replace with the actual URL
+            const postUrl = document.getElementById('send-url').value;
             sendModifiedScript(postUrl, modifiedScriptContent);
         });
     </script>
